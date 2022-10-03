@@ -1,10 +1,11 @@
 {
-  "name": "product-api-withtypescript",
+  "name": "library-book-api-withtypescript",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index",
+    "start": "node src/controller/index",
+    "dev": "ts-node-dev src/controller/index",
     "webpack": "webpack --config webpack.config.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,6 +27,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^13.13.52",
     "ts-loader": "^7.0.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^3.9.10",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
